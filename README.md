@@ -1,16 +1,77 @@
-# React + Vite
+# MOV-X — Site Institucional
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page institucional para a MOV-X, transportadora rodoviária de cargas, desenvolvida como projeto de estudo para consolidar conhecimentos em React.
 
-Currently, two official plugins are available:
+> 🚧 Projeto em desenvolvimento ativo — este README é atualizado conforme o progresso.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🎯 Sobre o projeto
 
-## React Compiler
+Site desenvolvido para um cliente real, com foco em apresentar os serviços da transportadora e capturar solicitações de orçamento através de um formulário controlado.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tecnologias utilizadas
 
-## Expanding the ESLint configuration
+- **React** (via Vite)
+- **JavaScript (ES6+)**
+- **ESLint** para padronização de código
+- **Git** com Conventional Commits
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+*Em progresso: Node.js (backend), Tailwind CSS (estilização), React Router (múltiplas páginas)*
+
+## ✅ Funcionalidades implementadas
+
+- Componentização completa da página inicial (Header, Hero, Services, QuoteForm, Differentials, ClientLogos, CtaBanner, Footer)
+- Formulário de orçamento controlado (`useState`), com validação de campos e captura de todos os dados preenchidos
+- Listagem dinâmica de dados via `.map()` (serviços, diferenciais, logos de clientes)
+- Carrossel de logos de clientes (CSS puro, com loop infinito)
+
+## 🗺️ Roadmap
+
+- [ ] Backend em Node.js/Express para processar o formulário de orçamento
+- [ ] Estilização completa com Tailwind CSS
+- [ ] Múltiplas páginas com React Router (Home, Sobre, Contato)
+- [ ] Otimização de SEO
+- [ ] Deploy em produção
+
+## 🚀 Rodando o projeto localmente
+
+\`\`\`bash
+# Clone o repositório
+git clone https://github.com/jucimarasena/movx-site.git
+
+# Entre na pasta
+cd movx-site
+
+# Instale as dependências
+npm install
+
+# Rode o servidor de desenvolvimento
+npm run dev
+\`\`\`
+
+O projeto estará disponível em `http://localhost:5173`.
+
+## 📁 Estrutura do projeto
+
+\`\`\`
+src/
+├── components/
+│   ├── Header.jsx
+│   ├── Hero.jsx
+│   ├── Benefits.jsx
+│   ├── Services.jsx
+│   ├── ServiceCard.jsx
+│   ├── QuoteSection.jsx
+│   ├── QuoteForm.jsx
+│   ├── Differentials.jsx
+│   ├── DifferentialCards.jsx
+│   ├── ClientLogos.jsx
+│   ├── CtaBanner.jsx
+│   └── Footer.jsx
+├── App.jsx
+└── main.jsx
+\`\`\`
+
+## 👩‍💻 Autora
+
+**Jucimara Sena** — Desenvolvedora Front-End
+[LinkedIn](https://linkedin.com/in/jucimara-sena) · [GitHub](https://github.com/jucimarasena)
