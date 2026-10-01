@@ -1,28 +1,23 @@
-import './App.css'
-import Header from './components/Header'
-import Hero from './components/Hero'
-import QuoteSection from './components/QuoteSection'
-import Services from './components/Services'
-import Differential from './components/Differential'
-import Clients from './components/Clients'
-import BannerCta from './components/BannerCta'
-import Footer from './components/Footer'
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
 
-function App() {
+function App(){
+    return(
+        <BrowserRouter>
+       
 
+            {/* Routes */}
 
-  return (
-    <div>
-      <Header />
-      <Hero />
-      <Services />
-      <QuoteSection />
-      <Differential />
-      <Clients />
-      <BannerCta />
-      <Footer />
-    </div>
-  )
+            <Routes>
+                <Route path="/" element={<Home />}/>
+                <Route path="/Sobre" element={<About />} />
+                <Route path="/Contato" element={<Contact />}/>
+            </Routes>
+        </BrowserRouter>
+
+    );
 }
 
-export default App
+export default App;
