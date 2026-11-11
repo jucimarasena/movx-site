@@ -20,7 +20,7 @@ function Services() {
         }
     ];
     return (
-        <>
+        <div id="servicos">
             <div>
                 <h2>Nossos Serviços</h2>
                 <h4>Soluções completas para o transporte da sua carga. </h4>
@@ -39,7 +39,7 @@ function Services() {
                     })
                 } 
             </div>
-        </>
+        </div>
 
     )
 }

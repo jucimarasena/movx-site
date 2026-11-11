@@ -1,4 +1,3 @@
-import '../App.css'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
@@ -7,7 +6,7 @@ function About() {
         <>
             <Header />
             <h1>Conheça nossa história</h1>
-            <Footer />
+            <Footer />  
         </>
     )
 }

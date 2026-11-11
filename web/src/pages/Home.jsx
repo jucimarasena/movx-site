@@ -1,4 +1,3 @@
-import '../App.css'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
 import QuoteSection from '../components/QuoteSection'
@@ -16,7 +15,9 @@ function Home() {
       <Header />
       <Hero />
       <Services />
-      <QuoteSection />
+      <section id='orcamento'>
+        <QuoteSection />
+      </section>
       <Differential />
       <Clients />
       <BannerCta />
